@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Trendyol (Minify)</title>
 </head>
@@ -10,10 +12,49 @@
     
 
     <header class="header-section">
-        <div class="logo">
+        
             <img src="./assets/images/logo.svg" alt="" class="logo">
+       
+
+        <form action="">
+            <input type="text" placeholder="Aradığınız ürün, kategori veya markayı yazınız" id="searchInput">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="right-side">
+
+            <div class="user">
+                <i class="fa-regular fa-user"></i>
+
+
+                <div class="login">
+                    <button>Girish yap</button>
+                    <button>Uye ol</button>
+                </div>
+            </div>
+
+            <div class="favourite">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishlist-items">0</span>
+                <span onclick="showWishList()">Favorilerim</span>
+            </div>
+           
+            <div class="basket">
+                <i class="fa-solid fa-bag-shopping"></i>
+              <span id="cart-items">0</span>
+              <span onclick="showCart()">Sepetim</span>
+
+            </div>
+            
+            
+           
+
+
         </div>
     </header>
+
+
+    
 
     <script src="./assets/js/script.js"></script>
 </body>
