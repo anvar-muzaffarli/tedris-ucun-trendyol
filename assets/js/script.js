@@ -39,8 +39,10 @@ function displayProducts() {
         productElement.classList.add('col-md-4', 'mb-3', 'p-2', 'col-12', 'product','ms-2')
         productElement.setAttribute("data-aos", "fade-right")
         // data-aos-duration="3000"
+        // data-aos-offset="300"
+        productElement.setAttribute("data-aos-offset", `${300+ product.id*3}`)
 
-        productElement.setAttribute("data-aos-duration", `${product.id}00`)
+        productElement.setAttribute("data-aos-duration", `${product.id*2+3000}`)
 
 
         const image = document.createElement('img')

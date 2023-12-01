@@ -1,5 +1,6 @@
 :root {
     --trendyol-btn: #F27919;
+    --background-color:#f2e4d7;
 }
 
 @font-face {
@@ -183,6 +184,7 @@ form input {
     height: 400px;
     transform: scale(0.5);
     padding: 20px;
+    background-color: #fff;
     
   }
 
@@ -194,4 +196,25 @@ form input {
 
   .product h3 {
     font-size: 14px;
+  }
+
+  .products {
+    background-color: var(--background-color);
+    padding: 20px;
+  }
+
+
+
+  @media(max-width:768px) {
+    .user {
+        display: none;
+    }
+
+    .favourite {
+        display: none;
+    }
+
+    .basket {
+        display: none;
+    }
   }
